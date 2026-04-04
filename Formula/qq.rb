@@ -5,13 +5,13 @@
 class Qq < Formula
   desc "A simple, fast job queue based on River Queue"
   homepage "https://github.com/willnewby/qq"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/willnewby/qq/releases/download/v0.1.8/qq_Darwin_x86_64.tar.gz"
-      sha256 "f327d29038199ff4a3402f8650544fc82106a1bdc88c7f34ac5b2e6fea2c534c"
+      url "https://github.com/willnewby/qq/releases/download/v0.1.9/qq_Darwin_x86_64.tar.gz"
+      sha256 "c2c76b540c634e713c61d02113c86135956f130a5022c2730437b33d283b261e"
 
       def install
         bin.install "qq"
@@ -28,8 +28,8 @@ class Qq < Formula
       end
     end
     on_arm do
-      url "https://github.com/willnewby/qq/releases/download/v0.1.8/qq_Darwin_arm64.tar.gz"
-      sha256 "f90394b6b2bad175eabc15552b15d2d7cdad7b1a55155ad9fe00844cb8c2806d"
+      url "https://github.com/willnewby/qq/releases/download/v0.1.9/qq_Darwin_arm64.tar.gz"
+      sha256 "a01a1458bae15c063a1961c20f85a27e9d5a42ae4ed277078c0fc151d73613b7"
 
       def install
         bin.install "qq"
@@ -50,8 +50,8 @@ class Qq < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/willnewby/qq/releases/download/v0.1.8/qq_Linux_x86_64.tar.gz"
-        sha256 "50f18e12572d6e4503c8feb28116ac7bdabeab4b97f52c852186a0068c6db4c4"
+        url "https://github.com/willnewby/qq/releases/download/v0.1.9/qq_Linux_x86_64.tar.gz"
+        sha256 "8e28a0c5b2966ad7368b6978949dcd62a5037417202e185b0724de7fe6c46456"
 
         def install
           bin.install "qq"
@@ -70,8 +70,8 @@ class Qq < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/willnewby/qq/releases/download/v0.1.8/qq_Linux_arm64.tar.gz"
-        sha256 "3558e32864c88d7bea5a31335b7fbf885d239502c7f33ba7e991699b4b09c04a"
+        url "https://github.com/willnewby/qq/releases/download/v0.1.9/qq_Linux_arm64.tar.gz"
+        sha256 "88a4b4a895571e6f37e35522774d71bc9c9da09fbc1627e4fce0503397ed5ac2"
 
         def install
           bin.install "qq"
